@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mixed Signals</string>
+    <string name="txt_ok">OK</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_yes">Yes</string>
+    <string name="txt_no">No</string>
+    <string name="txt_warning">Warning</string>
+    <string name="txt_alert">Alert</string>
+    <string name="txt_input_name">Please enter user name!</string>
+    <string name="txt_input_phone">Please enter phone number!</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="loadingBook_border">10dp</dimen>
+    <dimen name="loadingPage_border">5dp</dimen>
+    <dimen name="loadingBook_padding">15dp</dimen>
+</resources>
