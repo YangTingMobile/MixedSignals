@@ -123,4 +123,10 @@ public class DetailActivity extends AppCompatActivity {
         ivEdit.setVisibility(View.GONE);
         edtSMS.setEnabled(true);
     }
+
+    @OnClick(R.id.txt_detail_edit)
+    public void onTextEditButtonClicked(View v) {
+        ivEdit.setVisibility(View.GONE);
+        edtSMS.setEnabled(true);
+    }
 }

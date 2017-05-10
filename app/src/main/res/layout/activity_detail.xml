@@ -255,7 +255,25 @@
                 android:paddingRight="20dp"
                 android:paddingTop="20dp"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/lbl_edit" />
+                android:src="@mipmap/lbl_edit"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_detail_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="false"
+                android:layout_marginRight="40dp"
+                android:adjustViewBounds="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:text="Edit Message"
+                android:textColor="#c3313e"
+                android:textSize="15dp" />
         </RelativeLayout>
 
 
