@@ -131,8 +131,10 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String searchQuery) {
-                m_block_adapter.filter(searchQuery.toString().trim());
-                lsvUsers.invalidate();
+                if (m_block_adapter != null) {
+                    m_block_adapter.filter(searchQuery.toString().trim());
+                    lsvUsers.invalidate();
+                }
                 return true;
             }
         });
@@ -540,7 +542,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onAdd() {
-        final CharSequence[] options = {"Add user manually", "Add user from addressbook", "Cancel"};
+        final CharSequence[] options = {"Add user manually", "Add user from address book", "Cancel"};
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setTitle("Add Users!");
         builder.setItems(options, new DialogInterface.OnClickListener() {
@@ -549,7 +551,7 @@ public class MainActivity extends AppCompatActivity {
                 if (options[item].equals("Add user manually")) {
                     Intent manualIntent = new Intent(MainActivity.this, ManualActivity.class);
                     startActivity(manualIntent);
-                } else if (options[item].equals("Add user from addressbook")) {
+                } else if (options[item].equals("Add user from address book")) {
                     onPermissionGoto();
                 } else if (options[item].equals("Cancel")) {
                     dialog.dismiss();
