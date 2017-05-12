@@ -169,7 +169,7 @@ public class ContactActivity extends AppCompatActivity {
         ivLoading.start();
 
         this.database_adapter.openToWrite();
-        this.database_adapter.insert(MainActivity._instance.BLOCK_USERS_TABLE, item.getName(), item.getPhone(), "User unavailable", "1");
+        this.database_adapter.insert(MainActivity._instance.BLOCK_USERS_TABLE, item.getName(), item.getPhone(), "User unavailable.", "1");
         this.database_adapter.close();
 
         ivLoading.stop();

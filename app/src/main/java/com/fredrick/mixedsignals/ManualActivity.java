@@ -89,7 +89,7 @@ public class ManualActivity extends AppCompatActivity {
 
         this.database_adapter.openToWrite();
         if (iPath == 0) {
-            this.database_adapter.insert(MainActivity._instance.BLOCK_USERS_TABLE, edtName.getText().toString(), edtPhone.getText().toString(), "User unavailable", "1");
+            this.database_adapter.insert(MainActivity._instance.BLOCK_USERS_TABLE, edtName.getText().toString(), edtPhone.getText().toString(), "User unavailable.", "1");
         } else {
             this.database_adapter.updateName(MainActivity._instance.BLOCK_USERS_TABLE, iIndex, edtName.getText().toString(), edtPhone.getText().toString());
         }
